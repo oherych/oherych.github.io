@@ -1,0 +1,43 @@
+body {
+	font-family: "Lucida Sans Unicode", Arial;
+	padding-bottom: 50px;
+}
+
+@media print {
+	body {-webkit-print-color-adjust: exact;}
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: : 0;
+}
+
+.block-title > div {
+	background: #f2f3f3;
+}
+
+h1 {
+	font-size: 51px;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+h3 {
+	background: #2f4152;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.block-header {
+	margin-top: 10px;
+}
+
+.line {
+	margin-top: 8px;
+	background: #2f4152 !important;
+	height: 1px;
+}

@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>{{.Name}} - {{.Position}}</title>
+    <meta name="description" content="" />
+    <meta name="Keywords" content="{{.Name}},{{.Position}}{{range .OtherSkills}},{{.}}{{end}}">
+    <meta name="viewport" content="width=750, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/b44558abea.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-3 col-xs-3">
+            <img src="/me.jpg" width="100%" />
+        </div>
+        <div class="col-md-8 col-sm-9 col-xs-9">
+            <h1>{{.Name}}</h1>
+            <h2>{{.Position}}</h2>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 visible-xs-block visible-sm-block"><h3>Contacts</h3></div>
+                <div class="col-sm-1 col-md-4 col-xs-2 text-right"><b>Phone</b></div>
+                <div class="col-sm-2 col-md-8 col-xs-2 text-right"><a href="call:{{.Phone}}">{{.Phone}}</a></div>
+                <div class="col-sm-1 col-md-4 col-xs-2 text-right"><b>Skype</b></div>
+                <div class="col-sm-2 col-md-8 col-xs-2 text-right"><a href="skype:{{.Skype}}">{{.Skype}}</a></div>
+                <div class="col-sm-1 col-md-4 col-xs-2 text-right"><b>Birth</b></div>
+                <div class="col-sm-2 col-md-8 col-xs-2 text-right">{{.Birth}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row block-header ">
+        <div class="col-md-2">
+            <h3>about me</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="row">
+                <a href="https://www.facebook.com/herych.oleh" target="_blank" class="btn btn-social-icon btn btn-facebook"><span class="fa fa-facebook"></span></a>
+                <a href="https://github.com/oherych" target="_blank" class="btn btn-social-icon btn btn-github"><span class="fa fa-github"></span></a>
+                <a href="https://ua.linkedin.com/in/dieseldraft" target="_blank" class="btn btn-social-icon btn btn-linkedin"><span class="fa fa-linkedin"></span></a>
+            </div>
+        </div>
+        <div class="col-md-10">{{.Description}}</div>
+    </div>
+
+    <div class="row block-header">
+        <div class="col-md-2">
+            <h3>Skills</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-sm-12 col-xs-12 pull-right">
+            <div class="progress">
+                {{range .Skills}}
+                <div class="progress-bar {{.Color}}" role="progressbar" aria-valuenow="{{.Progress}}" style="width: {{.Progress}}%">
+                    {{.Label}}
+                </div>
+                {{end}}
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-10 pull-right">
+            {{range .OtherSkills}}
+            <span class="badge">{{.}}</span>
+            {{end}}
+        </div>
+    </div>
+
+    <div class="row block-header">
+        <div class="col-md-2">
+            <h3>Experience</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+
+    {{range .Experiences}}
+    <div class="row">
+        <div class="col-md-2 col-sm-2 text-right">
+            {{.From}} -
+            {{.To}}
+        </div>
+        <div class="col-md-10 col-sm-10">
+            <b>{{.Project}}</b><br/>
+            <i>{{.Position}}</i>
+            <div>{{.Description}}</div>
+        </div>
+    </div>
+    <br/>
+    {{end}}
+
+    <div class="row block-header">
+        <div class="col-md-2">
+            <h3>Education</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+
+    {{range .Educations }}
+    <div class="row">
+        <div class="col-md-2 text-right">
+            {{.From}} -
+            {{.To}}
+        </div>
+        <div class="col-md-10">
+            <b>{{.School}}</b><br/>
+            <i>{{.Name}}</i>
+        </div>
+    </div>
+    {{end}}
+
+    <div class="row block-header">
+        <div class="col-md-2">
+            <h3>Languages</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+
+    {{range .Languages}}
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-2 text-right">
+            {{.Name}}
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-10">
+            <div class="progress">
+                <div class="progress-bar {{.Color}}" role="progressbar" aria-valuenow="{{.Progress}}" style="width: {{.Progress}}%">
+                    {{.Label}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{end}}
+
+    <div class="row block-header">
+        <div class="col-md-2">
+            <h3>Recommendations</h3>
+        </div>
+        <div class="col-md-10">
+            <div class="line hidden-sm hidden-xs"></div>
+        </div>
+    </div>
+
+    {{range .Recommendations}}
+    <div class="row">
+        <div class="col-md-2 text-right">
+            {{.Date}}
+        </div>
+        <div class="col-md-10">
+            <blockquote>
+                <p>{{.Description}}</p>
+                <footer>
+                    <a target="_blank" href="{{.Link}}">{{.Author}}</a>,
+                    {{.Source}}
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    {{end}}
+
+</div>
+</body>
+</html>
