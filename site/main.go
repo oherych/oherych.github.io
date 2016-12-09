@@ -38,7 +38,7 @@ func getInfo() Info {
 		Phone:       "+380977629793",
 		Skype:       "dieseldraft",
 		Birth:       "08.04.1987",
-		Description: "I'm Web Developer with 11 years experience. Most of time I worked with PHP. But in this moment I'm experimenting with Go (golang) and have small commercial experience. I like this technology and would like to continue work with it. Worked with small and big (~60 developers in one place). Scrum, Kanban and Waterfall too. Locally and remote from home.",
+		Description: "Hi, I'm Senior Backend Developer and currently I'm looking new dream project. I have more that 11 years experience on developer position. My main technology is PHP and I know it very well. But currently, I migrate to Golang and I spend whole myself to growing this skill.",
 		OtherSkills: []string{"PHP", "GO", "Javascript", "MySQL", "CouchDB", "XML", "Linux", "TDD", "jQuery", "Twitter Bootstrap", "Yii", "Redmine", "Jenkins"},
 
 		Experiences: []Experience{
@@ -48,7 +48,7 @@ func getInfo() Info {
 				Project:     "Vivino",
 				Company:     "Symphony Solutions",
 				Position:    "PHP/Golang Backend Developer",
-				Description: "",
+				Description: "Vivino is cool projects about wine. We have a huge database of wines. Currently, we have more than 20 million users and big loading to our servers. I'm working in API team. My responsibility is development new features and support old. Very often my tasks were improvements of performance. Mostly I'm working on PHP side but also I'm Golang developer. Technologies: PHP, JS, Mysql, GO (Golang), ElasticSearch, AWS, Kafka, Aerospike, Kanban",
 			},
 			{
 				From:        "Sep 2010",
@@ -56,7 +56,7 @@ func getInfo() Info {
 				Project:     "nedoma.com.ua",
 				Company:     "",
 				Position:    "Founder",
-				Description: "We like active life. And we try to develop active sport in our country. Nedoma is blog about active life. Everybody can talk about this experience and his knowledge. I'm a founder, editor, and author of most of  topics. Also i main organizer of our trips. Most of them take part big groups (30 peoples ). All my participation only like volunteering and without pay for me.",
+				Description: "This is personal non-commercial projects. We like active sport and like write about this. First of all, we are blog but also we organized low price trip. Our goals were popularization of active recreation. On this project, I'm a founder, editor, main event manager. Currently, project is frozen",
 			},
 			{
 				From:        "Sep 2013",
@@ -64,7 +64,7 @@ func getInfo() Info {
 				Project:     "LC Parts",
 				Company:     "",
 				Position:    "Technical Consultant",
-				Description: "Friends project. I'm something like technical consultant and requirements manager. My responsibilities are structure all business needs. From last time i helping with bugs fixing. This project take about one hour in week.",
+				Description: "Small project for the friend. We looked prices for car parts on several sites. It's was something like prices aggregator. My responsibility was the server support, architecture and development of the system. Also, I interviewed new candidates to this project. Technologies: PHP, Zend Framework, HTML, jQuery, MySql",
 			},
 			{
 				From:        "Aug 2011",
@@ -72,7 +72,7 @@ func getInfo() Info {
 				Project:     "Borsh.ch",
 				Company:     "",
 				Position:    "Founder",
-				Description: "This is my first serious experience founding commercial project. My responsibilities are prepare finance model and business plan. Also i take part in development server and client side. Some part from project we give to freelance. I mean design and content",
+				Description: "My startup. Unfortunately, I made all possible junior mistakes. I started without the team, without the vision of goals and without founded target auditory. I want to say \"thank you\" to it. This project taught me a lot and stole all my money.",
 			},
 			{
 				From:        "Jun 2014",
@@ -80,7 +80,7 @@ func getInfo() Info {
 				Project:     "SalesDoubler",
 				Company:     "",
 				Position:    "Remote Web Developer",
-				Description: "My responsibility was fixing bugs and implementation new features. Communication by Skype and phone.",
+				Description: "Remote job. The main my responsibility was the return to live old coupon project. I started from small refactoring and then fixed all bugs. The project was short but interesting. Technologies: PHP, HTML, jQuery, CSS, MySql",
 			},
 			{
 				From:        "Jul 2012",
@@ -88,7 +88,7 @@ func getInfo() Info {
 				Project:     "WAS",
 				Company:     "Intellias",
 				Position:    "Software Engineer",
-				Description: "Great company, great people, great customer. I came like team lead, but my team not increased during all time and I worked alone. Unfortunately our customers stop work with us. They dont need more outsource his project. During work with WAS.dk I had interesting challenges, new technology and responsibility. I hope guys satisfied of my work. I left this company for changing my life and find self in something new.",
+				Description: "I came to this company on Team Lead position. But unfortunately customer changes his plans and I worked alone two years. My responsibility was the implementation of  Extjs components for admin panel. Also, I implemented new (we don't found analog) algorithm of comparing two HTML files without breaking of syntax. Technologies: PHP, JS, ExtJs, jQuery, Twitter Bootstrap, CouchDB, MySql",
 			},
 			{
 				From:        "Nov 2011",
@@ -96,7 +96,7 @@ func getInfo() Info {
 				Project:     "NextGen",
 				Company:     "MalkosUA",
 				Position:    "Web Developer",
-				Description: "",
+				Description: "We analyzed data from many garbage cars. Each car gave us huge log file. We need this data for statistics and calculation of bonuses. My responsibility was working on the control panel for this system. Technologies: Yii, PHP, JavaSript, MySql, Scrum",
 			},
 			{
 				From:        "Aug 2009",
@@ -104,7 +104,7 @@ func getInfo() Info {
 				Project:     "HireVue",
 				Company:     "SoftServe",
 				Position:    "Web developer",
-				Description: "All time i worked in team SAS on one project. Unfortunately customer don't want publish his name. I`m was second developer on this project. When we start out team was 2 developer. When i left our team was 10 developer and two QA. I got realy big experience with team work. We have not bad processes. I continue develop my mentoring skills. Page2I left this project because CTO on customer side taking not adequate decisions. And i dont want see how my project will get fail",
+				Description: "When I come to this company I was the second developer on the project. After two years our team grew to 10 developers and 2 QA. It was a great experience of teamwork. My responsibility was development online video interview system, deploying, hot maintenance. Technologies: PHP, Zend Framework, MySql, Jquery, PHPUnit",
 			},
 			{
 				From:        "Mar 2007",
@@ -112,7 +112,7 @@ func getInfo() Info {
 				Project:     "InterLogic",
 				Company:     "",
 				Position:    "Web developer",
-				Description: "First experience on outsourcing. I had several customers and about 20 projects. Big list of technologis. I got first experience mentoring young developers. Great company but they dont have interesting project. This was main reason why i left they.",
+				Description: "Its was first my outsourcing experience. I had very different work. Some projects took 1-2 days other more than the year. I'm worked with PHP, ActiveScript, C#",
 			},
 			{
 				From:        "May 2005",
@@ -120,7 +120,7 @@ func getInfo() Info {
 				Project:     "VashComfort",
 				Company:     "OWBT",
 				Position:    "Web developer",
-				Description: "First my job. I'm working with small team. Job i combined with study in University. My opinion this is great start for young developer"},
+				Description: "First commercial experience. In working in the small team. In the same time, I studied in University. Technologies: PHP, MySQL, JavaScript."},
 		},
 		Skills: []Skill{
 			{Progress: 55, Label: "PHP", Color: "progress-bar-danger"},
